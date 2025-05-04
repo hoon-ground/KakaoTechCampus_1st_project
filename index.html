@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +10,21 @@
     <header>
         <div class="container">
             <h1>
-                <button data-animation-scroll="true" data-target="#main">KakaoFlix</button>
+                <button id="home-btn">KakaoFlix</button>
             </h1>
             <nav>
                 <ul>
                     <li>
-                        <button data-animation-scroll="true" data-target="#about">SEARCH</button>
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="영화 제목을 입력하세요."/>
+                            <button id="search-btn">SEARCH</button>
+                        </div>
                     </li>
                     <li>
-                        <button data-animation-scroll="true" data-target="#features">LOGIN</button>
+                        <button class="btn">LOGIN</button>
                     </li>
                     <li>
-                        <button data-animation-scroll="true" data-target="#target">SIGN UP</button>
+                        <button class="btn">SIGN UP</button>
                     </li>
                 </ul>
             </nav>
@@ -29,17 +32,27 @@
     </header>
 
     <main id="main">
-        <section>
-
+        <h1 id="title">인기 TOP 20</h1>
+        <h1 id="search-title" style="display:none;">검색 결과</h1>
+        <section id="movie-list">
+            <div>
+                <ul></ul>
+            </div>
         </section>
-
-
-
     </main>
 
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
 
+    <footer>
+        <p>KakaoTechCampus</p>
+        <p>Frontend 1st Project</p>
+    </footer>
 
-    <footer></footer>
     <script src="main.js"></script>
 </body>
 </html>
