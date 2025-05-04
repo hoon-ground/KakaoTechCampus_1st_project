@@ -1,4 +1,5 @@
 const apiKey = 'a8c6d363b9f3a2700f7952274feb5b1e';
+//키는 공개적인 곳에 올리면 안되는 것을 인지하고 있지만 평가를 위해 두었습니다.
 const baseUrl = 'https://api.themoviedb.org/3';
 const imageBaseUrl = 'https://image.tmdb.org/t/p/w500'
 const language = 'ko-KR';
